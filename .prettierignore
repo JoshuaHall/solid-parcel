@@ -1,0 +1,14 @@
+.parcel-cache/
+dist/
+node_modules/
+.vscode/
+lib/
+coverage/
+types/
+tsconfig.json
+pnpm-lock.yaml
+package-lock.json
+yarn.lock
+.gitignore
+.eslintignore
+.prettierignore

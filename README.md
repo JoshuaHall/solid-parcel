@@ -1,3 +1,7 @@
 # Solid Parcel Starter
 
-Minimal [Solid](https://github.com/ryansolid/solid) starter for [Parcel v2](https://v2.parceljs.org/).
+Includes all of the front-end tooling that you want, pre-configured with reasonable defaults for [Solid](https://www.solidjs.com/) and [Parcel](https://parceljs.org/):
+
+- [TypeScript](https://www.typescriptlang.org/)
+- [ESLint](https://eslint.org/)
+- [Prettier](https://prettier.io/)
