@@ -1,0 +1,24 @@
+{
+  "scripts": {
+    "build": "parcel build src/index.html",
+    "dev": "parcel serve src/index.html",
+    "tsc": "tsc . --noEmit"
+  },
+  "dependencies": {
+    "solid-js": "^1.3.9"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.17.5",
+    "@babel/preset-env": "^7.16.11",
+    "@parcel/compressor-brotli": "^2.3.2",
+    "@parcel/compressor-gzip": "^2.3.2",
+    "@parcel/config-default": "^2.3.2",
+    "@parcel/core": "^2.3.2",
+    "babel-preset-solid": "^1.3.6",
+    "parcel": "^2.3.2",
+    "typescript": "^4.6.2"
+  },
+  "browserslist": [
+    "defaults"
+  ]
+}
