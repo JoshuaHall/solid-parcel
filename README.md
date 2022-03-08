@@ -1,6 +1,8 @@
 # Solid Parcel Starter
 
-Includes all of the front-end tooling that you want, pre-configured with reasonable defaults for [Solid](https://www.solidjs.com/) and [Parcel](https://parceljs.org/):
+An opinionated and small [Solid](https://www.solidjs.com/) starter, using [Parcel](https://parceljs.org/):
+
+Includes:
 
 - [TypeScript](https://www.typescriptlang.org/)
 - [ESLint](https://eslint.org/)

@@ -20,6 +20,7 @@ module.exports = defineConfig({
     curly: 'warn',
     eqeqeq: 'error',
     'import/no-unresolved': 'error',
+    '@typescript-eslint/consistent-type-imports': 'error',
   },
   settings: {
     'import/parsers': {
