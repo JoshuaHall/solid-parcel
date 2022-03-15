@@ -1,11 +1,12 @@
 import { render } from 'solid-js/web'
 
+import './styles.css'
+
 function App() {
   return <p>Solid Parcel Starter</p>
 }
 
-const root = document.getElementById('root')
+// eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+const root = document.getElementById('root')!
 
-if (root) {
-  render(() => <App />, root)
-}
+render(() => <App />, root)

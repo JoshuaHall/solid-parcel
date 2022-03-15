@@ -5,10 +5,3 @@ types/
 .parcel-cache/
 node_modules/
 .vscode/
-.eslintrc.js
-pnpm-lock.yaml
-package-lock.json
-yarn.lock
-.gitignore
-.prettierignore
-.eslintignore

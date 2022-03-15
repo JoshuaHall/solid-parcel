@@ -1,16 +1,17 @@
 {
   "scripts": {
     "build": "parcel build src/index.html",
+    "serve": "serve dist",
     "dev": "parcel src/index.html",
     "tsc": "tsc",
     "format": "prettier . --write",
-    "lint": "eslint ."
+    "lint": "eslint \"**/*.{js,jsx,ts,tsx,cjs,mjs}\""
   },
   "dependencies": {
     "solid-js": "^1.3.12"
   },
   "devDependencies": {
-    "@babel/core": "^7.17.5",
+    "@babel/core": "^7.17.7",
     "@babel/preset-env": "^7.16.11",
     "@parcel/compressor-brotli": "^2.3.2",
     "@parcel/compressor-gzip": "^2.3.2",
@@ -18,10 +19,10 @@
     "@parcel/core": "^2.3.2",
     "@parcel/optimizer-css": "^2.3.2",
     "@parcel/transformer-css-experimental": "^2.3.2",
-    "@typescript-eslint/eslint-plugin": "^5.14.0",
-    "@typescript-eslint/parser": "^5.14.0",
+    "@typescript-eslint/eslint-plugin": "^5.15.0",
+    "@typescript-eslint/parser": "^5.15.0",
     "babel-preset-solid": "^1.3.12",
-    "eslint": "^8.10.0",
+    "eslint": "^8.11.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-define-config": "^1.2.5",
     "eslint-import-resolver-typescript": "^2.5.0",
@@ -29,6 +30,7 @@
     "eslint-plugin-solid": "^0.4.4",
     "parcel": "^2.3.2",
     "prettier": "^2.5.1",
+    "serve": "^13.0.2",
     "typescript": "^4.6.2"
   },
   "browserslist": [

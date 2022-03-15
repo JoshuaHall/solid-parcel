@@ -1,26 +1,37 @@
 // @ts-check
+// eslint-disable-next-line no-undef
 const { defineConfig } = require('eslint-define-config')
 
+// eslint-disable-next-line no-undef
 module.exports = defineConfig({
   root: true,
   parser: '@typescript-eslint/parser',
-  parserOptions: {
-    project: './tsconfig.json',
-  },
-  plugins: ['@typescript-eslint', 'import', 'solid'],
-  extends: [
-    'eslint:recommended',
-    'plugin:import/recommended',
-    'plugin:import/typescript',
-    'plugin:@typescript-eslint/recommended',
-    'plugin:solid/typescript',
-    'prettier',
+  overrides: [
+    {
+      files: ['*.ts', '*.tsx'],
+      extends: [
+        'plugin:import/typescript',
+        'plugin:@typescript-eslint/recommended',
+        'plugin:solid/typescript',
+      ],
+      parserOptions: {
+        project: './tsconfig.json',
+      },
+      rules: {
+        '@typescript-eslint/consistent-type-imports': 'error',
+      },
+    },
   ],
+  plugins: ['@typescript-eslint', 'import', 'solid'],
+  extends: ['eslint:recommended', 'plugin:import/recommended', 'prettier'],
   rules: {
     curly: 'warn',
     eqeqeq: 'error',
-    'import/no-unresolved': 'error',
-    '@typescript-eslint/consistent-type-imports': 'error',
+    'import/no-unresolved': [
+      'error',
+      // @ts-ignore this correctly ignores them, the TS declarations are wrong
+      { ignore: ['\\.(css|scss|sass|less)$'] },
+    ],
   },
   settings: {
     'import/parsers': {
