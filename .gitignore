@@ -13,3 +13,4 @@ types/
 .yarn/install-state.gz
 .pnp.*
 .npm
+.pnpm-debug.log
